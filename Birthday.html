@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <style type="text/css">
-    /* 基本样式 */
+    /* Base styles */
     body {
       background: #E5E5E5;
       padding: 2% 5%;
@@ -26,7 +26,7 @@
       left: 0;
     }
 
-    /* 卡片正面样式 */
+    /* Front of the card styles */
     #card-front {
       background-color: #FF5555;
       background-image: linear-gradient(top, #FF5555 0%, #FF7777 100%);
@@ -34,16 +34,16 @@
       transition: transform 1s linear;
     }
 
-    /* 卡片里面样式 */
+    /* Inside of the card styles */
     #card-inside .wrap {
       padding: 1.5em 2.5em;
       background: #FFEFEF;
       box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
     }
 
-    /* 卡片正面文字样式 */
+    /* Front of the card text styles */
     #card h1 {
-      font-size: 4vw; /* 使用vw单位，根据视口宽度调整字体大小 */
+      font-size: 70px;
       text-align: center;
       font-family: 'Nobile', sans-serif;
       font-style: italic;
@@ -56,7 +56,7 @@
     }
 
     #card h3 {
-      font-size: 2vw; /* 使用vw单位，根据视口宽度调整字体大小 */
+      font-size: 30px;
       text-align: center;
       font-family: 'Nobile', sans-serif;
       font-style: italic;
@@ -68,24 +68,24 @@
       color: #FFF;
     }
 
-    /* 响应式样式 */
-    @media (max-width: 768px) {
-      /* 当屏幕宽度小于等于768px时应用以下样式 */
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+      /* When the screen width is 768px or smaller, apply the following styles */
       #card {
         padding: 5% 10%;
       }
       #card h1 {
-        font-size: 6vw;
+        font-size: 40px;
       }
       #card h3 {
-        font-size: 3vw;
+        font-size: 20px;
       }
     }
   </style>
 </head>
 <body>
   <div id="card">
-    <!-- 正面 -->
+    <!-- Front of the card -->
     <div id="card-front">
       <div class="wrap">
         <h1>Happy Birthday!<br></h1>
@@ -93,7 +93,7 @@
       </div>
     </div>
 
-    <!-- 里面 -->
+    <!-- Inside of the card -->
     <div id="card-inside">
       <div class="wrap">
         <p>親愛的楠楠</p>
